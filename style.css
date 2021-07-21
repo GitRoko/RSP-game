@@ -1,0 +1,132 @@
+body {
+  background-color: rgba(255, 217, 1, 0.486);
+  font-family: 'Londrina Solid';
+  font-size: 16px;
+  font-weight: 400;
+}
+.container {
+  background-color: rgb(71, 197, 187);
+  width: 400px;
+  margin: auto;
+  padding: 20px;
+  height: 570px;
+}
+.row.header h1 {
+  margin: 0 0 8px 0;
+  padding: 0;
+  letter-spacing: 5px;
+  font-size: 48px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 10px rgb(0, 0, 0);;
+}
+.row.score {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.player-name, .comp-name {
+  font-size: 32px;
+}
+.scoreboard {
+  font-size: 36px;
+  display: flex;
+}
+.scoreboard .player-score, .scoreboard .comp-score {
+  padding: 10px 20px;
+  border: 5px solid #000;
+  border-radius: 10px;
+  margin: 5px 10px;
+  background-color: #fff;
+}
+.scoreboard .divider {
+  align-self: center;
+  font-size: 42px;
+}
+.row.gesture {
+  display: flex;
+  flex-direction: column;
+}
+.screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.player-gesture.shake-left {
+   /* Start the shake animation and make the animation last for 0.5 seconds */
+   animation: shake-player 2s;
+
+   /* When the animation is finished, start again */
+   animation-iteration-count: infinite;
+}
+
+@keyframes shake-player {
+  0% { transform: translate(0px, 0px) rotate(0deg); }
+  10% { transform: translate(0px, 0px) rotate(10deg); }
+  20% { transform: translate(0px, 0px) rotate(-10deg); }
+ 
+  40% { transform: translate(0px, 0px) rotate(10deg); }
+  50% { transform: translate(0px, 0px) rotate(-10deg); }
+ 
+  70% { transform: translate(0px, 0px) rotate(10deg); }
+  80% { transform: translate(0px, 0px) rotate(-10deg); }
+ 
+  100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+.comp-gesture.shake-right {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake-comp 2s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake-comp {
+ 0% { transform: translate(0px, 0px) rotate(0deg); }
+ 10% { transform: translate(0px, 0px) rotate(-10deg); }
+ 20% { transform: translate(0px, 0px) rotate(10deg); }
+
+ 40% { transform: translate(0px, 0px) rotate(-10deg); }
+ 50% { transform: translate(0px, 0px) rotate(10deg); }
+
+ 70% { transform: translate(0px, 0px) rotate(-10deg); }
+ 80% { transform: translate(0px, 0px) rotate(10deg); }
+
+ 100% { transform: translate(0px, 0px) rotate(0deg); }
+}
+.row.gesture .start {
+  font-family: 'Londrina Solid';
+  font-size: 32px;
+  font-weight: 400;
+  padding: 15px 15px;
+  border: 5px solid #000;
+  border-radius: 10px;
+  margin: 30px auto;
+  background-color: orange;
+}
+.row.choice {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.row.choice button {
+  font-family: 'Londrina Solid';
+  font-size: 24px;
+  font-weight: 400;
+  padding: 5px 2px;
+  border: 5px solid #000;
+  border-radius: 10px;
+  width: 110px;
+}
+.row.choice button.active {
+  background-color: mediumseagreen;
+}
+
