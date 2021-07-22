@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,12 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap"
+    rel="stylesheet">
+
   <title>RSP-Game</title>
 </head>
+
 <body>
   <div class="container">
     <div class="row header">
@@ -34,16 +37,16 @@
     <div class="row gesture">
       <div class="screen">
         <div class="player-gesture shake-left">
-          <img src="/img/rock-left@0.5x.png" alt="">
+          <img class="player-img" src="/img/rock-left@0.5x.png" alt="">
         </div>
         <div class="comp-gesture shake-right">
-          <img src="/img/rock-right@0.5x.png" alt="">
+          <img class="comp-img" src="/img/rock-right@0.5x.png" alt="">
         </div>
       </div>
       <button class="start">START!</button>
     </div>
     <div class="row choice">
-      <button class="rock active">Rock</button>
+      <button class="rock">Rock</button>
       <button class="scissors">Scissors</button>
       <button class="paper">Paper</button>
     </div>
@@ -51,4 +54,5 @@
   </div>
   <script src="app.js"></script>
 </body>
+
 </html>
